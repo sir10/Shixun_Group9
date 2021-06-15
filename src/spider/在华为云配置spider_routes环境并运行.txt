@@ -1,0 +1,45 @@
+1. 
+pip3 install lxml
+2. 
+pip3 install selenium
+3. 
+cd /etc/yum.repos.d/
+4.
+在目录 /etc/yum.repos.d 新建 google-chrome.reppo
+5.
+vim google-chrome.repo
+6.
+[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+7.
+yum -y install google-chrome-stable --nogpgcheck
+8. 
+sudo yum install -y epel-release
+9.
+yum install -y chromium
+10.
+google-chrome --version
+11.
+把解压好的driver拖动到/usr/local/bin/
+12.
+修改权限777
+13.
+chromedriver --version
+14. 
+新建 /home/spider/routes
+上传代码并
+cd /home/spider/routes/
+15.修改代码为云版
+16.前台运行
+python3 test.py
+后台运行
+nohup python3 -u sanya_routes.py > 三亚.log 2>&1 &
+注意：记录进程id
+17.查看后台运行的所有 python 进程
+ps aux |grep python
+18.
+kill -9 [进程 id]
