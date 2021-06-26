@@ -1,0 +1,83 @@
+html,body,#app{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html,body{
+  background:#00065b url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position:0 0;
+}
+.com-page{
+  width: 100%;
+  height: 100%;
+  padding-right: 0.3rem;
+  overflow: hidden;
+}
+
+.com-container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.com-chart{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+canvas{
+  border-radius: 0.2rem;
+
+}
+
+.default-scrollbar__wrap {
+  overflow-x: hidden;
+}
+
+/* 改变input框背景颜色 */
+input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
+  -webkit-text-fill-color: #ededed !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent  inset !important;
+  background-color:transparent;
+  background-image: none;
+  /* //背景色透明  生效时长  过渡效果  启用时延迟的时间 */
+  transition: background-color 50000s ease-in-out 0s;
+}
+input {
+  background-color:transparent;
+}
+input:-webkit-autofill {
+  /* //transparent 即设置背景色为透明-可改为其他颜色 */
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: rgba(255,255,255,1)!important;
+}
+/* //关于解决输入框背景颜色 */
+
+.form_container input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #ccc;
+}
+.form_container input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+}
+.form_container input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ccc;
+}
+.form_container input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #ccc;
+}
+/* //关于解决输入框背景颜色 */
+
+
+
+
